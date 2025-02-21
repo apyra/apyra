@@ -10880,8 +10880,8 @@ hr.divider-light {
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #3f3f3f;
   font-family: var(--bs-font-sans-serif);
-  font-weight: 700;
-  font-size: 0.9rem;
+  font-weight: 500;
+  font-size: 1rem;
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
