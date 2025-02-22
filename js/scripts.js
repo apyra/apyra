@@ -12,6 +12,8 @@ window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
+// Select the element
+    const element = document.getElementById("masthead");
         if (!navbarCollapsible) {
             return;
         }
@@ -42,6 +44,7 @@ window.addEventListener('DOMContentLoaded', event => {
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
         document.querySelectorAll('#navbarResponsive .nav-link')
+       
     );
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
