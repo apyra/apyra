@@ -10928,6 +10928,14 @@ hr.divider-light {
   }
 }
 
+.about{
+    background: linear-gradient(to bottom, rgb(6 22 103 / 34%) 0%, rgb(47 33 23 / 83%) 100%), url(../assets/img/oculus_inside.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
