@@ -8039,7 +8039,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
+  color: var(--bs-blue) !important;
 }
 
 .text-secondary {
@@ -10888,7 +10888,7 @@ hr.divider-light {
   color: #f4623a;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #ffcc00 !important;
+  color: var(--bs-blue) !important;
 }
 @media (min-width: 992px) {
   #mainNav {
