@@ -102,7 +102,7 @@
    <!-- Portfolio-->
         <div id="portfolio">
             <div class="container-fluid p-0">
-	      <h2 class="text-center mt-0">Portifólio</h2>
+	      <h2 class="text-center mt-0" style="padding-bottom: 60px;">Portifólio</h2>
                 <div class="row g-0">
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Cubo">
@@ -110,9 +110,10 @@
                             <div class="portfolio-box-caption">
                                 <div class="project-name">Cubo</div>
 				<div class="project-description">Um grande e criativo quebra cabeças de tabuleiro disponível para windows gratuitamente.</div>
-				<div type="button" class="btn btn-secondary btn-sm project-download click" onclick="downloadFile('assets/games/cubo/dist_windows/cubosetup.exe')">Download</div>
+<div class="btn btn-secondary btn-sm project-download" onclick="downloadFile('assets/games/cubo/dist_windows/cubosetup.exe')">Download</div>
                             </div>
                         </a>
+
                     </div>
                  </div>
             </div>
@@ -157,11 +158,13 @@
 	<script>
 
 	function downloadFile(url) {
-	alert("downloading")
-        window.open(url, '_self');
 
-        });
-
+const link = document.createElement('a');
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
         }
 
         function copyToClipboard(text) {
