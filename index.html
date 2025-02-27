@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -44,9 +45,10 @@
                                 "servicosGamesText": "We love to develop games that engage and entertain the public.",
                                 "servicosAmorTitle": "Made with Love",
                                 "servicosAmorText": "You will certainly have a project from us made with a lot of dedication.",
-                                "portifolioTitle": "Portfolio",
                                 "gameCuboTitle": "Cubo",
                                 "gameCuboText": "A great and creative puzzle board game available for windows for free.",
+                                "gameNextTitle": "What comes next...",
+                                "gameNextText": "We are waiting for you to create our newest and most amazing product.",
                                 "contatoTitle": "Let's get in touch!",
                                 "contatoText": "Ready to start your next project with us? Send us a message and we will respond as soon as possible!",
                             }
@@ -68,9 +70,10 @@
                                 "servicosGamesText": "Nós amamos desenvolver games que emgagem e divirtam o público.",
                                 "servicosAmorTitle": "Feito com Amor",
                                 "servicosAmorText": "Você certamente haverá de nós um projeto feito com muita dedicação.",
-                                "portifolioTitle": "Portfólio",
                                 "gameCuboTitle": "Cubo",
                                 "gameCuboText": "Um grande e criativo quebra cabeças de tabuleiro disponível para windows gratuitamente.",
+                                "gameNextTitle": "O que vem depois...",
+                                "gameNextText": "Estamos esperando por você para criarmos nosso mais novo e incrível produto.",
                                 "contatoTitle": "Vamos entrar em contato!",
                                 "contatoText": "Pronto para iniciar seu próximo projeto conosco? Nos envie uma mensagem e nós responderemos o mais rápido possível!",
                             }
@@ -98,9 +101,10 @@
                     document.getElementById('servicosGamesText').innerText = t('servicosGamesText');
                     document.getElementById('servicosAmorTitle').innerText = t('servicosAmorTitle');
                     document.getElementById('servicosAmorText').innerText = t('servicosAmorText');
-                    document.getElementById('portifolioTitle').innerText = t('portifolioTitle');
                     document.getElementById('gameCuboTitle').innerText = t('gameCuboTitle');
                     document.getElementById('gameCuboText').innerText = t('gameCuboText');
+                    document.getElementById('gameNextTitle').innerText = t('gameNextTitle');
+                    document.getElementById('gameNextText').innerText = t('gameNextText');
                     document.getElementById('contatoTitle').innerText = t('contatoTitle');
                     document.getElementById('contatoText').innerText = t('contatoText');
                 });
@@ -216,7 +220,6 @@
    <!-- Portfolio-->
         <div id="portfolio">
             <div class="container-fluid px-4 px-lg-5">
-	        <h2 class="text-center mt-0" style="padding-bottom: 60px;" id="portifolioTitle">Portfólio</h2>
                 <div class="row g-0">
                     <div class="scrolling-wrapper row flex-row flex-nowrap">
                         <div class="card" style="width: 18rem;">
@@ -226,13 +229,21 @@
                                     <div class="project-name">Preview</div>
                                 </div>
                             </a>
-                        <div class="card-body">
-                            <h5 class="card-title"  id="gameCuboTitle">Cubo</h5>
-                            <p class="card-text" id="gameCuboText">Um grande e criativo quebra cabeças de tabuleiro disponível para windows gratuitamente.</p>
+                            <div class="card-body">
+                                <h5 class="card-title"  id="gameCuboTitle">Cubo</h5>
+                                <p class="card-text" id="gameCuboText">Um grande e criativo quebra cabeças de tabuleiro disponível para windows gratuitamente.</p>
+                            </div>
+                            <div class="card-body">
+                                <a href="assets/games/cubo/dist_windows/cubosetup.exe" class="btn btn-secondary bt-sm">Download</a>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <a href="assets/games/cubo/dist_windows/cubosetup.exe" class="btn btn-secondary bt-sm">Download</a>
-                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img class="img-fluid card-img-top" src="assets/Logomarca.svg" alt="..." style="padding:50px;margin-top:80px;"/>
+                            <div class="card-body">
+                                <h5 class="card-title"  id="gameNextTitle">O que vem depois...</h5>
+                                <p class="card-text"  id="gameNextText">Estamos esperando por você para criarmos nosso mais novo e incrível produto.</p>
+                            </div>
+             
                         </div>
                     </div>
                 </div>
