@@ -58,7 +58,7 @@
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">De olhos no futuro!</h2>
-                        <p class="text-white-75 mb-4">A Apyra Games te coloca com os olhos no futuro desenvolvendo projetos de realidade virtual aplicadas em games, treinamento e simulações! Redusa os custos de operação de equipamentos e veículos de pequeno ou grande porte com treinanemtos em ambiente virtual totalmente imersivo.</p>
+                        <p class="text-white-75 mb-4">A Apyra Games te coloca de os olhos pro futuro com projetos de realidade virtual aplicadas em games, treinamento e simulações! Redusa os custos de operação de equipamentos e veículos de pequeno ou grande porte com treinanemtos em ambiente virtual totalmente imersivo.</p>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                             <p class="text-muted mb-0">Desenvolvemos a experiência de multi-usuário interagindo no mesmo projeto!</p>
                         </div>
                     </div>
-		    <div class="col-lg-3 col-md-6 text-center">
+		            <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-controller fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Games</h3>
@@ -101,21 +101,27 @@
         </section>
    <!-- Portfolio-->
         <div id="portfolio">
-            <div class="container-fluid p-0">
-	      <h2 class="text-center mt-0" style="padding-bottom: 60px;">Portifólio</h2>
+            <div class="container-fluid px-4 px-lg-5">
+	        <h2 class="text-center mt-0" style="padding-bottom: 60px;">Portifólio</h2>
                 <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Cubo">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <div class="project-name">Cubo</div>
-				<div class="project-description">Um grande e criativo quebra cabeças de tabuleiro disponível para windows gratuitamente.</div>
-<div class="btn btn-secondary btn-sm project-download" onclick="downloadFile('assets/games/cubo/dist_windows/cubosetup.exe')">Download</div>
-                            </div>
-                        </a>
-
+                    <div class="scrolling-wrapper row flex-row flex-nowrap">
+                        <div class="card" style="width: 18rem;">
+                            <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Cubo">
+                                <img class="img-fluid card-img-top" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-name">Preview</div>
+                                </div>
+                            </a>
+                        <div class="card-body">
+                            <h5 class="card-title">Cubo</h5>
+                            <p class="card-text">Um grande e criativo quebra cabeças de tabuleiro disponível para windows gratuitamente.</p>
+                        </div>
+                        <div class="card-body">
+                            <a href="assets/games/cubo/dist_windows/cubosetup.exe" class="btn btn-secondary bt-sm">Download</a>
+                        </div>
+                        </div>
                     </div>
-                 </div>
+                </div>
             </div>
         </div>
      <!-- Contact-->
@@ -157,15 +163,7 @@
 
 	<script>
 
-	function downloadFile(url) {
-
-const link = document.createElement('a');
-    link.href = url;
-    link.download = filename;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-        }
+	
 
         function copyToClipboard(text) {
             navigator.clipboard.writeText(text).then(function() {
